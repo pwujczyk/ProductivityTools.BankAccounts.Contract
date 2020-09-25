@@ -1,11 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>0.0.1</Version>
+    <Version>0.0.4</Version>
     <Authors>Pawel Wujczyk</Authors>
-    <Company></Company>
+    <Company>
+    </Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Product />
-    <Description>This is contract o ProductivityTools.BankAccounts project.</Description>
+    <Description>This is the contract for ProductivityTools.BankAccounts project.</Description>
+    <PackageIcon>ProductivityTools_blue_85px_1.png</PackageIcon>
+    <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.BankAccounts.Contract</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\Images\Nuget\ProductivityTools_blue_85px_1.png">
+      <Pack>True</Pack>
+      <PackagePath>
+      </PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
