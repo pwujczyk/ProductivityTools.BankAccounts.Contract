@@ -4,13 +4,15 @@ namespace ProductivityTools.BankAccounts.Contract
 {
     public class Transaction
     {
-        public Transaction(string augmentTransactionId)
+        public Transaction() { }//for deserialization needed
+
+        public Transaction(string augmentTransactionId) : this()
         {
             this.AugmentTransactionId = augmentTransactionId.Trim();
         }
 
         public int TransactionId { get; set; }
-        public string AugmentTransactionId {get;set;}
+        public string AugmentTransactionId { get; set; }
 
         public string Bank { get; set; }
         public string AccountName { get; set; }
@@ -31,7 +33,7 @@ namespace ProductivityTools.BankAccounts.Contract
         //
 
         //karta
-        public string CardNumber{ get; set; }
+        public string CardNumber { get; set; }
         public string CardOwner { get; set; }
 
         public string Description { get; set; }
